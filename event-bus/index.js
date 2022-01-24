@@ -9,9 +9,6 @@ const events = [];
 
 app.post("/events", (req, res) => {
   const event = req.body;
-
-  console.log('Bus Event body : ', req.body);
-
   events.push(event);
 
   axios.post("http://localhost:4000/events", event).catch((err) => {
