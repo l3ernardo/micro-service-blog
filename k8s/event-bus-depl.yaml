@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: event-bus
-          image: cygnetops/event-bus-82
+          image: bernlt/event-bus
 ---
 apiVersion: v1
 kind: Service
